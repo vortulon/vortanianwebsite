@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #272725, #cfc275);
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #28282B;
+  color: #d6d4c5;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 5px solid #cfc275;
+  box-shadow: 0 0 20px #cfc275;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #d6d4c5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  color: #cfc275;
+  text-shadow: 0 0 10px #cfc275, 0 0 20px #cfc275;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  background: #28282B;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  background: #28282B;
+  color: #d6d4c5;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 0 30px #28282B;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 40px #cfc275;
+}
+
+h2 {
+  color: #cfc275;
+  text-shadow: 0 0 10px #cfc275, 0 0 20px #cfc275;
+}
+
+h3 {
+  color: #c5c3b7;
+  text-shadow: 0 0 10px #c4c3be, 0 0 20px #bdbcb5;
+}
+
+footer {
+  background: #cfc275;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  box-shadow: 0 0 20px #cfc275;
+}

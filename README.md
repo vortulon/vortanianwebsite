@@ -1,4 +1,4 @@
-## this is a dummy website until i fully learn to code, this website was made with webflow, i accept any type of criticism or guidance by others, just be nice im actually trying to learn stuff
+## im still learning, dont mind my horrible code, thanks to maybescripted for making me actually start learning css and html lol
 
 nothin much, my website!
 
