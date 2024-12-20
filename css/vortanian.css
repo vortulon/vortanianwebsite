@@ -1,24 +1,24 @@
 html {
   background-image: url('../images/background.png');
-  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  color: #4a4a4a;
   min-height: 100%;
-  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0); 
+  overflow: auto;
+  margin: 0;
 }
 
 header {
-  background: #28282B;
+  background-color: rgba(255, 255, 255, 0); 
   color: #d6d4c5;
   padding: 30px;
   text-align: center;
-  border-bottom: 5px solid #cfc275;
-  box-shadow: 0 0 20px #cfc275;
 }
 
 nav ul {
@@ -44,12 +44,17 @@ nav ul li a:hover {
 }
 
 .hero {
-  text-align: center;
   padding: 40px;
   background: #28282B;
   border-radius: 15px;
   margin: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 40px #cfc275;
 }
 
 .container {
@@ -92,4 +97,29 @@ footer {
   padding: 15px 0;
   width: 100%;
   box-shadow: 0 0 20px #cfc275;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
 }
